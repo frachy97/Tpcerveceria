@@ -22,8 +22,8 @@ public class BeerHouse {
             stock = stock + st;
         }else{
             if(stock != tope)
-            System.out.println("Se compro: " + (tope-stock) + " cervezas.");
-            stock = tope;
+            System.out.println("Se compro: " + (tope-stock) + " cervezas.");// siempre pido hasta el tope
+            stock = tope;                                                   
         }
         Stock();
     }
@@ -34,7 +34,7 @@ public class BeerHouse {
             stock = stock- st;
         }else{
             if(stock != 0)
-            System.out.println("Se vendio: " + stock+" cervezas.");//vendo all
+            System.out.println("Se vendio: " + stock+" cervezas.");//si pide mas de lo que tengo, le vendo lo q me sobro.
             stock =0;
         }
         Stock();
